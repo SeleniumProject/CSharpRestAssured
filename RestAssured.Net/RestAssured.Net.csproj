@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>4.1.0</Version>
+    <Authors>Bas Dijkstra</Authors>
+    <Company>On Test Automation</Company>
+    <Description>C# port of the popular REST Assured library for writing tests for HTTP APIs.</Description>
+    <PackageProjectUrl>https://github.com/basdijkstra/rest-assured-net</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/basdijkstra/rest-assured-net</RepositoryUrl>
+    <PackageId>RestAssured.Net</PackageId>
+    <PackageTags>testing;api;rest;http;rest-assured</PackageTags>
+    <RootNamespace>RestAssured</RootNamespace>
+    <PackageIcon>package-icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\package-icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.51" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NHamcrest" Version="3.3.0" />
+    <PackageReference Include="NJsonSchema" Version="10.9.0" />
+    <PackageReference Include="Stubble.Core" Version="1.10.8" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
